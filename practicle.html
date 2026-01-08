@@ -1,0 +1,36 @@
+<link rel ="stylesheet" href="style.css">
+<script src="Graphics.js" defer></script>
+<canvas id="canvas"></canvas>
+
+<div class="controls">
+    <h1>Interactive Particle Network</h1>
+    <p>Move your mouse to interact with particles</p>
+    
+    <div class="control-panel">
+        <div class="control-group">
+            <label>Particle Count: <span id="particleCount">100</span></label>
+            <input type="range" id="particleSlider" min="50" max="300" value="100" title="Adjust number of particles">
+        </div>
+        
+        <div class="control-group">
+            <label>Connection Distance: <span id="distanceValue">150</span></label>
+            <input type="range" id="distanceSlider" min="50" max="300" value="150" title="Adjust connection distance">
+        </div>
+        
+        <div class="control-group">
+            <label>Particle Speed: <span id="speedValue">1</span></label>
+            <input type="range" id="speedSlider" min="0.5" max="3" step="0.1" value="1" title="Adjust particle speed">
+        </div>
+        
+        <div class="button-group">
+            <button id="colorBtn" class="btn">Change Colors</button>
+            <button id="resetBtn" class="btn">Reset</button>
+            <button id="explodeBtn" class="btn">Explode!</button>
+        </div>
+    </div>
+</div>
+
+<div class="stats">
+    <span>FPS: <span id="fps">60</span></span>
+    <span>Particles: <span id="activeParticles">100</span></span>
+</div>
